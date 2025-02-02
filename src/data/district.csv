@@ -1,0 +1,78 @@
+id,name_cz,name_en,region_id
+1,Okres Benešov,Benesov District,10
+2,Okres Beroun,Beroun District,10
+3,Okres Blansko,Blansko District,2
+4,Okres Brno-město,Brno-City District,2
+5,Okres Brno-venkov,Brno-Country District,2
+6,Okres Bruntál,Bruntal District,6
+7,Okres Břeclav,Breclav District,2
+8,Okres Česká Lípa,Ceska Lipa District,5
+9,Okres České Budějovice,Ceske Budejovice District,1
+10,Okres Český Krumlov,Cesky Krumlov District,1
+11,Okres Děčín,Decin District,11
+12,Okres Domažlice,Domazlice District,9
+13,Okres Frýdek-Místek,Frydek-Mistek District,6
+14,Okres Havlíčkův Brod,Havlickuv Brod District,12
+15,Okres Hodonín,Hodonin District,2
+16,Okres Hradec Králové,Hradec Kralove District,4
+17,Okres Cheb,Cheb District,3
+18,Okres Chomutov,Chomutov District,11
+19,Okres Chrudim,Chrudim District,8
+20,Okres Jablonec nad Nisou,Jablonec nad Nisou District,5
+21,Okres Jeseník,Jesenik District,7
+22,Okres Jičín,Jicin District,4
+23,Okres Jihlava,Jihlava District,12
+24,Okres Jindřichův Hradec,Jindrichuv Hradec District,1
+25,Okres Karlovy Vary,Karlovy Vary District,3
+26,Okres Karviná,Karvina District,6
+27,Okres Kladno,Kladno District,10
+28,Okres Klatovy,Klatovy District,9
+29,Okres Kolín,Kolin District,10
+30,Okres Kroměříž,Kromeriz District,13
+31,Okres Kutná Hora,Kutna Hora District,10
+32,Okres Liberec,Liberec District,5
+33,Okres Litoměřice,Litomerice District,11
+34,Okres Louny,Louny District,11
+35,Okres Mělník,Melnik District,10
+36,Okres Mladá Boleslav,Mlada Boleslav District,10
+37,Okres Most,Most District,11
+38,Okres Náchod,Nachod District,4
+39,Okres Nový Jičín,Novy Jicin District,6
+40,Okres Nymburk,Nymburk District,10
+41,Okres Olomouc,Olomouc District,7
+42,Okres Opava,Opava District,6
+43,Okres Ostrava-město,Ostrava-City District,6
+44,Okres Pardubice,Pardubice District,8
+45,Okres Pelhřimov,Pelhrimov District,12
+46,Okres Písek,Pisek District,1
+47,Okres Plzeň-jih,Plzen-South District,9
+48,Okres Plzeň-město,Plzen-City District,9
+49,Okres Plzeň-sever,Plzen-North District,9
+50,Hlavní město Praha,Capital City of Prague District,14
+51,Okres Praha-východ,Praha-East District,10
+52,Okres Praha-západ,Praha-West District,10
+53,Okres Prachatice,Prachatice District,1
+54,Okres Prostějov,Prostejov District,7
+55,Okres Přerov,Prerov District,7
+56,Okres Příbram,Pribram District,10
+57,Okres Rakovník,Rakovnik District,10
+58,Okres Rokycany,Rokycany District,9
+59,Okres Rychnov nad Kněžnou,Rychnov nad Kneznou District,4
+60,Okres Semily,Semily District,5
+61,Okres Sokolov,Sokolov District,3
+62,Okres Strakonice,Strakonice District,1
+63,Okres Svitavy,Svitavy District,8
+64,Okres Šumperk,Sumperk District,7
+65,Okres Tábor,Tabor District,1
+66,Okres Tachov,Tachov District,9
+67,Okres Teplice,Teplice District,11
+68,Okres Trutnov,Trutnov District,4
+69,Okres Třebíč,Trebic District,12
+70,Okres Uherské Hradiště,Uherske Hradiste District,13
+71,Okres Ústí nad Labem,Usti nad Labem District,11
+72,Okres Ústí nad Orlicí,Usti nad Orlici District,8
+73,Okres Vsetín,Vsetin District,13
+74,Okres Vyškov,Vyskov District,2
+75,Okres Zlín,Zlin District,13
+76,Okres Znojmo,Znojmo District,2
+77,Okres Žďár nad Sázavou,Zdar nad Sazavou District,12
