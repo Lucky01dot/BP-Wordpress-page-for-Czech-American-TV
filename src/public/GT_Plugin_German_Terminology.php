@@ -56,6 +56,14 @@ class GT_Plugin_German_Terminology {
 				'jquery',
 				'gt_js_autocomplete'
 			) );
+            // Načtení Leaflet knihovny
+            wp_enqueue_style('leaflet-css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+            wp_enqueue_script('leaflet-js', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js', array(), null, true);
+
+// Načtení vlastního JS souboru pro Leaflet mapu
+            wp_enqueue_script('map-de-cz', plugin_dir_url(__FILE__) . 'js/map_de_cz.js', array('jquery', 'leaflet-js'), null, true);
+
+
 		}
 	}
 
@@ -223,7 +231,7 @@ class GT_Plugin_German_Terminology {
 	 *
 	 * @return false|string
 	 */
-	public function shortcode_german_cities( string $attrs, $content = null ) {
+	public function shortcode_german_cities( array $attrs, $content = null ) {
 		ob_start();
 
 		?>
@@ -305,6 +313,29 @@ class GT_Plugin_German_Terminology {
                    data-target="gt-german-terminology-german-city-print">Print</a>
             </div>
         </div>
+        <!-- Google Maps tlačítko -->
+        <!-- Google Maps tlačítko -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 text-center">
+                <button id="gt-show-on-map" class="btn btn-success">📍 Zobrazit na mapě</button>
+            </div>
+        </div>
+
+        <!-- Kontejner pro mapu -->
+        <div id="map-container" class="row justify-content-center mt-3" style="display: none;">
+            <div class="col-12">
+                <div id="map_cz" style="height: 500px;"></div>
+            </div>
+
+            <!-- Nová tlačítka pod mapou -->
+            <div class="col-12 text-center mt-2">
+                <button id="gt-reset-map" class="btn btn-warning">🔄 Reset</button>
+                <button id="gt-toggle-markers" class="btn btn-secondary">📍 Ponechat body</button>
+            </div>
+        </div>
+
+
+
         <br>
 		<?php
 

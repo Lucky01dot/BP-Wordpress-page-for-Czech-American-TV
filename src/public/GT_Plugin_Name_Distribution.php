@@ -59,24 +59,33 @@ class GT_Plugin_Name_Distribution {
 	/**
 	 * Enqueue scripts & CSS.
 	 */
-	public function enqueue_scripts() {
-		if ( $this->plugin_public->plugin->shortcode_check( $this->shortcodes ) ) {
-			wp_enqueue_script( 'gt_js_map_detail_parameters', $this->plugin_public->plugin->plugin_dir_url() . 'public/js/enums/map_detail_parameters.js' );
-			wp_enqueue_script( 'gt_js_map_chart', "https://www.gstatic.com/charts/loader.js" );
-			wp_enqueue_script( 'gt_js_map_api', "https://maps.googleapis.com/maps/api/js?key=" . GT_GMAP_API_KEY );
-			wp_enqueue_script( 'gt_js_map', $this->plugin_public->plugin->plugin_dir_url() . 'public/js/map.js', array(
-				'jquery',
-				'gt_js_map_chart',
-				'gt_js_map_api'
-			) );
-			wp_enqueue_script( 'gt_js_details', $this->plugin_public->plugin->plugin_dir_url() . 'public/js/map_details.js', array(
-				'jquery',
-				'gt_js_autocomplete',
-				'gt_js_map',
-				'gt_js_map_detail_parameters'
-			) );
-		}
-	}
+    public function enqueue_scripts() {
+        if ( $this->plugin_public->plugin->shortcode_check( $this->shortcodes ) ) {
+            // Leaflet CSS
+            wp_enqueue_style( 'leaflet_css', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css' );
+
+            // Leaflet JS
+            wp_enqueue_script( 'leaflet_js', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js', array(), null, true );
+
+            // Tvůj původní kód
+            wp_enqueue_script( 'gt_js_map_detail_parameters', $this->plugin_public->plugin->plugin_dir_url() . 'public/js/enums/map_detail_parameters.js' );
+            wp_enqueue_script( 'gt_js_map_chart', "https://www.gstatic.com/charts/loader.js" );
+            wp_enqueue_script( 'gt_js_map_api', "https://maps.googleapis.com/maps/api/js?key=" . GT_GMAP_API_KEY );
+            wp_enqueue_script( 'gt_js_map', $this->plugin_public->plugin->plugin_dir_url() . 'public/js/map.js', array(
+                'jquery',
+                'gt_js_map_chart',
+                'gt_js_map_api',
+                'leaflet_js' // Přidání Leaflet JS jako závislost
+            ) );
+            wp_enqueue_script( 'gt_js_details', $this->plugin_public->plugin->plugin_dir_url() . 'public/js/map_details.js', array(
+                'jquery',
+                'gt_js_autocomplete',
+                'gt_js_map',
+                'gt_js_map_detail_parameters'
+            ) );
+        }
+    }
+
 
 	//endregion
 
@@ -198,7 +207,7 @@ class GT_Plugin_Name_Distribution {
 	 *
 	 * @return false|string
 	 */
-	function shortcode_map( string $attrs, $content = null ) {
+	function shortcode_map( array $attrs, $content = null ) {
 		$config = GT_Container::instance()->get_config();
 
 		ob_start();
@@ -319,8 +328,17 @@ class GT_Plugin_Name_Distribution {
                             type="button">Clean
                     </button>
                 </div>
+
+            </div>
+            <div class="float-right mt-5">
+                <label class="radio-inline"><input type="radio" name="map-type"
+                                                   id="gt-name-distribution-map-region-checkbox"
+                                                   checked>Regions</label>
+                <label class="radio-inline"><input type="radio" name="map-type"
+                                                   id="gt-name-distribution-map-mep-checkbox">City</label>
             </div>
         </div>
+
 
         <div class="row">
             <div class="col-12 col-md-5">
@@ -329,13 +347,8 @@ class GT_Plugin_Name_Distribution {
                 </div>
             </div>
             <div class="col-12 col-md-7">
-                <div class="float-right mt-5">
-                    <label class="radio-inline"><input type="radio" name="map-type"
-                                                       id="gt-name-distribution-map-region-checkbox"
-                                                       checked>Regions</label>
-                    <label class="radio-inline"><input type="radio" name="map-type"
-                                                       id="gt-name-distribution-map-mep-checkbox">City</label>
-                </div>
+
+
                 <h3>
                     Map
                 </h3>

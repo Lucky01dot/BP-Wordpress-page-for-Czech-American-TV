@@ -117,7 +117,7 @@ class GT_FN_Translation_DAO extends GT_DAO {
 
         $query = "SELECT COUNT(*) FROM `{$table->_tablename_}`;";
 
-        return array( $table->_tablename_, $this->db->wpdb->get_var( $query ) );
+        return array( $table->_tablename_, $this->db->wpdb->get_row( $query ) );
     }
 
     /**

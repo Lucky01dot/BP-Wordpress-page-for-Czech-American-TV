@@ -26,25 +26,6 @@ class GT_EN_CZ_translation_DAO extends GT_DAO {
         return $this->db->wpdb->get_results($query);
     }
 
-    /**
-     * Add a new translation entry.
-     *
-     * @param string $czech_word
-     * @param string $english_translation
-     * @return bool
-     */
-    public function add_translation(string $czech_word, string $english_translation): bool {
-        $table = $this->db->en_cz_translation_table;
-
-        return $this->db->wpdb->insert(
-                $table->_tablename_,
-                array(
-                    'czech_word' => $czech_word,
-                    'english_translation' => $english_translation
-                ),
-                array('%s', '%s')
-            ) !== false;
-    }
 
     /**
      * Insert a new translation using an array of columns.
@@ -76,22 +57,17 @@ class GT_EN_CZ_translation_DAO extends GT_DAO {
      * @return array|null
      */
     public function get_all_records(): ?array {
+        $result = array();
         $table = $this->db->en_cz_translation_table;
 
-        $query = "SELECT `id`, `czech_word`, `english_translation` FROM `{$table->_tablename_}`;";
+        $query = "SELECT * FROM `{$table->_tablename_}`;";
         $all_records = $this->db->wpdb->get_results($query);
 
-        if (!$all_records) {
-            return null;
-        }
-
-        $result = array();
         foreach ($all_records as $record) {
-            $result[] = array(
-                'id' => $record->id,
+            array_push($result, array(
                 'czech_word' => $record->czech_word,
                 'english_translation' => $record->english_translation
-            );
+            ));
         }
 
         return $result;
@@ -105,17 +81,9 @@ class GT_EN_CZ_translation_DAO extends GT_DAO {
     public function get_records_count(): ?array {
         $table = $this->db->en_cz_translation_table;
 
-        $query = "SELECT COUNT(*) AS `count` FROM `{$table->_tablename_}`;";
-        $result = $this->db->wpdb->get_row($query);
+        $query = "SELECT COUNT(*) FROM `{$table->_tablename_}`;";
 
-        if (!$result) {
-            return null;
-        }
-
-        return array(
-            'table_name' => $table->_tablename_,
-            'count' => $result->count
-        );
+        return array( $table->_tablename_,$this->db->wpdb->get_row($query));
     }
 
     /**

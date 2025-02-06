@@ -1,12 +1,7 @@
 let gt_map_data_regions;
 let gt_map_data_cities;
 let gt_gmap;
-let gt_gmap_circles;
-let gt_gmap_marker;
-// Info window after clicking on city
-let gt_gmap_info_window = new google.maps.InfoWindow();
-// Red circle after clicking on city
-let gt_gmap_override_circle = _gt_map_circle_create_new(null, null);
+
 
 // Google API from WP injects
 google.charts.load('current', {
@@ -35,83 +30,69 @@ $(document).ready(function ($) {
 //#region FUNCTIONS
 
 /**
- * Draws the city map (google maps api) from given data.
+ * Draws the city map (leaflet api) from given data.
  * @param {Object[]} data the map data
  */
 function gt_map_cities(data) {
-    // Remove (reset) circles
-    for (let circle in gt_gmap_circles)
-        gt_gmap_circles[circle].setMap(null);
+    // Pokud již existuje mapa, odstraníme ji
+    if (gt_gmap) {
+        gt_gmap.remove();
+    }
 
-    // Remove (reset) info box and info circle
-    gt_gmap_info_window.setMap(null);
-    gt_gmap_override_circle.setMap(null);
-
-    // Remove (reset) markers
-    if (gt_gmap_marker !== undefined)
-        gt_gmap_marker.setMap(null);
-
-    gt_gmap_circles = [];
-    let center = {lat: 49.822, lng: 15.914}; // Default parameters to zoom and position the map to see the entire Czech Republic
+    // Definujeme výchozí centrum a zoom pro mapu
+    let center = [49.822, 15.914]; // Souřadnice středu ČR
     let zoom = 6;
 
-    // Create map if not defined
-    if (gt_gmap === undefined)
-        gt_gmap = _gt_map_create_new(zoom, center);
-
-    // If details are specified, change the map location.
+    // Pokud jsou specifikovány detaily, upravíme střed a zoom
     if (typeof data.details !== 'undefined') {
-        center = data.details.coords;
+        center = [data.details.coords.lat, data.details.coords.lng];
         zoom = 10;
-    } else if (data.length === 1) { // Exactly 1 city...
-        center = data[0].coords;
+    } else if (data.length === 1) { // Pokud máme přesně jedno město
+        center = [data[0].coords.lat, data[0].coords.lng];
         zoom = 9;
     }
 
-    // Set the zoom settings
-    gt_gmap.setZoom(zoom);
-    gt_gmap.setCenter(center);
+    // Vytvoření nové Leaflet mapy
+    gt_gmap = L.map('gt-name-distribution-map-gmap').setView(center, zoom);
 
-    // If details are not specified...
+    // Přidání OpenStreetMap jako podkladu mapy
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(gt_gmap);
+
+    // Pokud nejsou specifikovány detaily, vykreslíme kruhy
     if (typeof data.details === 'undefined') {
-
         for (let city in data) {
-            if (city === "total")
-                continue;
+            if (city === "total") continue;
 
-            // Add the circle for this city to the map.
-            let circle = _gt_map_circle_create_new(gt_gmap, data[city].coords);
-            gt_gmap_circles.push(circle);
+            // Přidání kruhu pro město
+            let circle = L.circle([data[city].coords.lat, data[city].coords.lng], {
+                color: '#0000FF',
+                fillColor: '#0000FF',
+                fillOpacity: 0.35,
+                radius: 2000
+            }).addTo(gt_gmap);
 
-            (function (circle, data, city) {
-                google.maps.event.addListener(circle, 'click', function (event) {
-                    gt_gmap_override_circle.setOptions({
-                        map: gt_gmap,
-                        center: circle.getCenter(),
-                        fillColor: '#FF0000',
-                        strokeColor: '#FF0000',
-                        zIndex: 200
-                    });
-                    gt_gmap_info_window.setContent(data[city].name + " : " + data[city].count);
-                    gt_gmap_info_window.setPosition(circle.getCenter());
-                    gt_gmap_info_window.open(gt_gmap);
-                });
-            })(circle, data, city);
+            // Přidání popisku po kliknutí na kruh
+            circle.bindPopup(`${data[city].name} : ${data[city].count}`);
         }
-    }
-    // Otherwise, details are specified...
-    else {
-        // Marker for city details
-        gt_gmap_marker = new google.maps.Marker({
-            position: data.details.coords,
-            map: gt_gmap,
-            title: data.details.name
-        });
+    } else {
+        // Pokud máme detaily, přidáme marker
+        L.marker([data.details.coords.lat, data.details.coords.lng])
+            .addTo(gt_gmap)
+            .bindPopup(data.details.name)
+            .openPopup();
     }
 
     $(GT_SELECTOR.NAME_DISTRIBUTION_MAP_GMAP_DIV).removeClass("d-none");
     $(GT_SELECTOR.NAME_DISTRIBUTION_NMAP_DIV).addClass("d-none");
+
+    setTimeout(() => {
+        gt_gmap.invalidateSize();
+    }, 100);
+
 }
+
 
 /**
  * Draws the region map (google charts api) from given data.
@@ -147,43 +128,6 @@ function gt_map_regions(data, hide_legend = false) {
             $('a[data-map_code="' + event.region + '"]').click();
         });
     }
-}
-
-/**
- * Create a new google map with specific configuration
- * @returns {google.maps.Map}
- * @private
- */
-function _gt_map_create_new(zoom, center) {
-    return new google.maps.Map(
-        document.getElementById(GT_SELECTOR.NAME_DISTRIBUTION_MAP_GMAP_DIV.substring(1)),
-        {
-            zoom: zoom,
-            minZoom: 6,
-            center: center,
-            disableDefaultUI: true,
-            zoomControl: true,
-            tilt: 0
-        });
-}
-
-/**
- * Create a new map circle with specific configuration
- * @returns {google.maps.Circle}
- * @private
- */
-function _gt_map_circle_create_new(map, center) {
-    return new google.maps.Circle({
-        strokeColor: '#0000FF',
-        strokeOpacity: 0.8,
-        strokeWeight: 1,
-        fillColor: '#0000FF',
-        fillOpacity: 0.35,
-        map: map,
-        clickable: true,
-        center: center,
-        radius: 2000
-    });
 }
 
 //#endregion

@@ -36,6 +36,8 @@ a.gt-link-ext:after{
     border: none !important;
 }
 
+
+
 @media only print {
     body > :not(#gt-print){
         display: none;
@@ -57,10 +59,14 @@ a.gt-link-ext:after{
         font-size: xx-large;
         text-align: justify;
     }
+
     table{
         width: 16cm !important;
     }
+
 }
+
+
 
 .wrapped-output-table {
     display: block;
