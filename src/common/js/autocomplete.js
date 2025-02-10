@@ -187,6 +187,13 @@ function _gt_autocomplete_process_data(data, type) {
 
                 });
                 break;
+            case GT_AUTOCOMPLETE_TYPE.TRANSLATION_LA_EN:
+                results.push({
+                    value: data[i].word_la,
+                    label: `${data[i].word_la}`,
+                    word_la : data[i].word_la,
+                })
+                break;
             default:
                 break;
         }

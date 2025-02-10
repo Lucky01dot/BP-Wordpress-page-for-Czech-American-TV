@@ -48,7 +48,7 @@ class GT_Plugin_Admin {
 	 */
 	private string $CITY_COLUMNS = "id,name_cz,name_de,district_id,note";
     private string $EN_CZ_COLUMNS = "id,czech_word,english_translation";
-
+    private string $LA_CZ_COLUMNS = "id,latin_word,czech_translation";
 	#endregion
 
 	#region PUBLIC VARS
@@ -112,9 +112,11 @@ class GT_Plugin_Admin {
 		add_action( 'wp_ajax_gt_fn_translation_import', array( $this, 'action_gt_fn_translation_import' ) );
 		add_action( 'wp_ajax_nopriv_gt_fn_translation_import', array( $this, 'action_gt_fn_translation_import' ) );
 
-        add_action( 'wp_ajax_gt_en_cz_translation_import', array( $this, 'action_gt_en_cz_import' ) );
-        add_action( 'wp_ajax_nopriv_gt_en_cz_translation_import', array( $this, 'action_gt_en_cz_import' ) );
+        add_action( 'wp_ajax_gt_cz_en_translation_import', array( $this, 'action_gt_en_cz_import' ) );
+        add_action( 'wp_ajax_nopriv_gt_cz_en_translation_import', array( $this, 'action_gt_en_cz_import' ) );
 
+        add_action( 'wp_ajax_gt_la_cz_translation_import', array( $this, 'action_gt_la_cz_import' ) );
+        add_action( 'wp_ajax_nopriv_gt_la_cz_translation_import', array( $this, 'action_gt_la_cz_import' ) );
 
 		add_action( 'wp_ajax_gt_fn_diminutives_import', array( $this, 'action_gt_fn_diminutives_import' ) );
 		add_action( 'wp_ajax_nopriv_gt_fn_diminutives_import', array( $this, 'action_gt_fn_diminutives_import' ) );
@@ -302,6 +304,19 @@ class GT_Plugin_Admin {
 
 
     }
+    public function action_gt_la_cz_import() {
+        $dao = $this->plugin_container->get_la_cz_translation_dao();
+        // drop table records
+        $dao->db->drop_table( $dao->db->la_cz_translation_table );
+
+        // create new table
+        $dao->db->create_table( $dao->db->la_cz_translation_table );
+
+        // insert
+        $this->insert_csv( $dao, $this->LA_CZ_COLUMNS );
+
+
+    }
 
 	public function action_gt_fn_translation_import() {
 		$dao = $this->plugin_container->get_fn_translation_dao();
@@ -387,6 +402,7 @@ class GT_Plugin_Admin {
 		$fn_translation_dao = $this->plugin_container->get_fn_translation_dao();
 		$fn_diminutives_dao = $this->plugin_container->get_fn_diminutive_dao();
         $en_cz_translation_dao = $this->plugin_container->get_cz_en_transtation_dao();
+        $la_cz_translation_dao = $this->plugin_container->get_la_cz_translation_dao();
 
 		$result = array();
 		array_push( $result, $mep_dao->get_records_count() );
@@ -400,6 +416,7 @@ class GT_Plugin_Admin {
 		array_push( $result, $fn_translation_dao->get_records_count() );
 		array_push( $result, $fn_diminutives_dao->get_records_count() );
         array_push($result, $en_cz_translation_dao->get_records_count() );
+        array_push( $result, $la_cz_translation_dao->get_records_count() );
 
 		$this->plugin->success( $result );
 	}

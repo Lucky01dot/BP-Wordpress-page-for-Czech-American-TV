@@ -14,6 +14,7 @@ const GT_AUTOCOMPLETE_TYPE = {
     NAME_DISTRIBUTION_MEP: "name-distribution-mep",
     NAME_DISTRIBUTION_LN: "name-distribution-ln",
     TRANSLATION_EN_CZ: "cz-en-translation",
+    TRANSLATION_LA_EN: "la-en-translation",
 };
 
 /**

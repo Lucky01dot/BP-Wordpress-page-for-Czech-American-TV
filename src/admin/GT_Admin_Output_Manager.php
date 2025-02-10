@@ -210,13 +210,8 @@
             <b>Status:</b> <span id='gt-ln-explanation-import-info'></span>
             </br>
             <div id='gt-ln-explanation-import-table'></div>
-            <hr>
-            
-            
-            <h2>Transcription Rules</h2>
-    		You can edit last name transcription rules in the file editor:
-            <a href=\"./plugin-editor.php?file=genealogy_tools%2Fincludes%2Fservices%2Frules.txt&plugin=genealogy_tools%2Fcatv_genealogy_tools.php\">Launch Editor</a>
             <hr>";
+
             $output_text .= "<h2>CZ to EN translations</h2>
             </br>
             
@@ -226,10 +221,11 @@
             <br/>
            	<br/>
            	<form class='gt-cz-en-translation-import-one' action='javascript:void(0);' autocomplete='off'>
-                <label for='gt-cz-en-translation-one-name'>Insert one record: </label>
-                <input id='gt-cz-en-translation-one-name' type='text' placeholder='Word cz'> 
-                <input id='gt-cz-en-translation-one-name-en' type='text' placeholder='Word en'>
+                <label for='gt-cz-en-translation-one-word'>Insert one record: </label>
+                <input id='gt-cz-en-translation-one-word' type='text' placeholder='Word cz'> 
+                <input id='gt-cz-en-translation-one-word-en' type='text' placeholder='Word en'>
                 <input class='gt-submit-button' type='submit' value='Import'>
+                
             </form> 
             </br>
             <h4>Insert CSV source file:</h4>
@@ -240,15 +236,17 @@
             The CSV source file must have following columns:
             <br /><br />
             <ul>
+                <li><code>id</code> - word ID</li>
                 <li><code>czech_word</code> - czech word</li>
                 <li><code>english_translation</code> - english word</li>
                 
             </ul>
            
-            <form class='gt-cz-en-translation-import' action='javascript:void(0);' autocomplete='off'>
+            <form class='gt-cz-en-translation-import'  action='javascript:void(0);' autocomplete='off'>
                 <label for='gt-cz-en-translation-import-file'>Import CSV file: </label>
-                <input type='file' accept='.csv' id='gt-cz-en-translation-import-file' name=gt-cz-en-translation-import-file-name'>
+                <input type='file' accept='.csv' id='gt-cz-en-translation-import-file' name='gt-cz-en-translation-import-file-name'>
                 <input class='gt-submit-button' type='submit' value='Import'>
+                
             </form> 
             
             </br>
@@ -259,7 +257,8 @@
                 <label for='gt-submit-button'>Export as CSV: </label>
                 <input value='Export' class='gt-submit-button' type='submit' value='Import'>
                 <input name='action' value='gt_export_table' type='hidden'>
-                <input name='table' value='fn-cz-en-translation' type='hidden'>
+                <input name='table' value='cz_en_translation' type='hidden'>
+                
             </form>
            
            	<br/>
@@ -268,6 +267,11 @@
             <b>Status:</b> <span id='gt-cz-en-translation-import-info'></span>
             </br>
             <div id='gt-cz-en-translation-import-table'></div>
+            <hr>
+            
+            <h2>Transcription Rules</h2>
+    		You can edit last name transcription rules in the file editor:
+            <a href=\"./plugin-editor.php?file=genealogy_tools%2Fincludes%2Fservices%2Frules.txt&plugin=genealogy_tools%2Fcatv_genealogy_tools.php\">Launch Editor</a>
             <hr>";
 
 			$output_text .= "</div>";
@@ -428,6 +432,28 @@
              <hr>";
 
 			$output_text .= "</div>";
+
+            $output_text .= "<h2>Translation from Latin to Czech</h2>
+            <b>Table:</b> *" . GT_Tables::LA_CZ_TRANSLATION . "
+            </br></br>
+            <ul>
+                <li><code>id</code> = id překladu</li>
+                <li><code>latin_word</code> = latinský slovo</li>
+                <li><code>czech_translation</code> = český překlad</li>
+                
+            </ul>
+            <form class='gt-la-cz-translation-import' action='javascript:void(0);' autocomplete='off'>
+                <label for='gt-la-cz-translation-import-file'>Bulk Import (CSV): </label>
+                <input type='file' accept='.csv' id='gt-la-cz-translation-import-file' name='gt-la-cz-translation-import-file-name'>
+                <input class='gt-submit-button' type='submit' value='Import'>
+            </form> 
+             <b>Status:</b> <span id='gt-la-cz-translation-import-info'></span>
+            </br>
+            <div id='gt-la-cz-translation-import-table'></div>
+            
+             <hr>";
+
+            $output_text .= "</div>";
 
 			echo( $output_text );
 		}

@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
      */
 
     $(GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_ONE_FORM).on("submit", function (event) {
-        insert_one_record("cz_en_translation", GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_ONE_FORM, null, null, null, null, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_ONE_WORD, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_ONE_WORD_EN, GT_SELECTOR.FN_TRANSLATION_IMPORT_INFO);
+        insert_one_record("cz_en_translation", null, null, null, null, null, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_ONE_WORD, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_ONE_WORD_EN, GT_SELECTOR.FN_TRANSLATION_IMPORT_INFO);
     });
 
     /**
@@ -92,10 +92,15 @@ jQuery(document).ready(function ($) {
     //CZ_EN
 
     $(GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_FORM).on("submit", function (event) {
-
         insert_csv_file(GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_FORM, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_FILE_NAME, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_INFO, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_TABLE, "gt_cz_en_translation_import",
-            [GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_FORM, GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_FORM, GT_SELECTOR.CZ_EN_IMPORT_FORM]);
+            [GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_FORM, GT_SELECTOR.LA_CZ_TRANSLATION_IMPORT_FORM, GT_SELECTOR.FN_TRANSLATION_IMPORT_FORM]);
     });
+
+    $(GT_SELECTOR.LA_CZ_TRANSLATION_IMPORT_FORM).on("submit", function (event) {
+        insert_csv_file(GT_SELECTOR.LA_CZ_TRANSLATION_IMPORT_FORM, GT_SELECTOR.LA_CZ_TRANSLATION_IMPORT_FILE_NAME, GT_SELECTOR.LA_CZ_TRANSLATION_IMPORT_INFO, GT_SELECTOR.LA_CZ_TRANSLATION_IMPORT_TABLE, "gt_la_cz_translation_import",
+            [GT_SELECTOR.CZ_EN_TRANSLATION_IMPORT_FORM, GT_SELECTOR.LA_CZ_TRANSLATION_IMPORT_FORM, GT_SELECTOR.FN_TRANSLATION_IMPORT_FORM]);
+    });
+
 
     /**
      * First names (gt_first_name) form import
@@ -214,6 +219,8 @@ jQuery(document).ready(function ($) {
             disable_forms(selectors_to_disable, false);
             return;
         }
+
+
         // Upload data
         upload_data(filename, action, table_name, selector_info, selector_table,
             selectors_to_disable,
@@ -255,8 +262,8 @@ jQuery(document).ready(function ($) {
         let diminutive = "";
         let name_en = "";
         let priority = "";
-        let czech_word = "";
-        let english_translation = "";
+        let czech_word = $(selector_czech_word).val();
+        let english_translation = $(selector_english_translation).val();
 
         if (table === "ln_explanation") {
             explanation = $(selector_explanation).val();
@@ -266,8 +273,7 @@ jQuery(document).ready(function ($) {
         } else if (table === "fn_diminutive") {
             diminutive = $(selector_diminutive).val();
         } else if(table === "cz_en_translation"){
-          czech_word = $(selector_czech_word).val();
-          english_translation = $(selector_english_translation).val();
+
         } else {
             return;
         }

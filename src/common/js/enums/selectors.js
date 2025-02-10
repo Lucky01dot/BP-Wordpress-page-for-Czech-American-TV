@@ -445,8 +445,7 @@ const GT_SELECTOR = {
     /**
      * CZ_EN translation form selector
      */
-    CZ_EN_TRANSLATION_IMPORT_FORM: ".gt-cz-en-translation-table-import",
-
+    CZ_EN_TRANSLATION_IMPORT_FORM: ".gt-cz-en-translation-import",
 
     /**
      * Admin panel - First name translation form for importing one record selector
@@ -464,17 +463,17 @@ const GT_SELECTOR = {
     /**
      * Admin panel - First name translation file input selector
      */
-    CZ_EN_TRANSLATION_IMPORT_FILE_NAME: "#gt-cz-en-translations-import-file",
+    CZ_EN_TRANSLATION_IMPORT_FILE_NAME: "#gt-cz-en-translation-import-file",
     /**
      * Admin panel - First name translation status field selector
      */
-    CZ_EN_TRANSLATION_IMPORT_INFO: "#gt-cz-en-translations-import-info",
+    CZ_EN_TRANSLATION_IMPORT_INFO: "#gt-cz-en-translation-import-info",
     /**
      * Admin panel - First name translation table selector
      */
-    CZ_EN_TRANSLATION_IMPORT_TABLE: "gt-cz-en-translations-import-table",
+    CZ_EN_TRANSLATION_IMPORT_TABLE: "gt-cz-en-translation-import-table",
 
-    CZ_EN_IMPORT_FORM: ".gt-cz-en-import",
+
     //#endregion
 
 
@@ -508,5 +507,46 @@ const GT_SELECTOR = {
      */
     CZ_EN_TRANSLATION_AUTOCOMPLETE_INPUTS: ".cz-en-translation-autocomplete",
     //endregion
+    DE_EN_TRANSLATION_AUTOCOMPLETE_INPUTS: "#gt-de-en-translation-input",
+    DE_EN_TRANSLATION_OUTPUT: "#de-en-translation-output",
+
+    DE_EN_TRANSLATION_PRINT_OUTPUT: ".gt-de-en-translation-result",
+    DE_EN_TRANSLATION_DATALIST: "#de-en-translation-datalist",
+    DE_EN_TRANSLATION_SUBMIT: "#de-en-translation-submit",
+    DE_EN_TRANSLATION_PRINT_BUTTON: ".gt-print-btn[data-target='de-en-translation-output']",
+
+    LA_CZ_TRANSLATION_IMPORT_FORM: ".gt-la-cz-translation-import",
+    LA_CZ_TRANSLATION_IMPORT_FILE_NAME: "#gt-la-cz-translation-import-file",
+
+    LA_CZ_TRANSLATION_IMPORT_INFO: "#gt-la-cz-translation-import-info",
+
+    LA_CZ_TRANSLATION_IMPORT_TABLE: "gt-la-cz-translation-import-table",
+
+    LA_EN_TRANSLATION_INPUT: "#gt-la-en-translation-input", // replace the interpolation afterwards
+
+    LA_EN_TRANSLATION_INPUTS: ".gt-la-en-translation-input",
+    /**
+     * Output for the transcription - interpolation needs to be replaced before use
+     * - where the html output will be printed
+     */
+    LA_EN_TRANSLATION_OUTPUT: "#la-en-translation-output",
+    /**
+     * Print output for the transcription - interpolation needs to be replaced before use
+     * - where the html output will be printed
+     * - but this is a special output not visible to users, but it is a structure for printer
+     */
+    LA_EN_TRANSLATION_PRINT_OUTPUT: ".gt-print-btn",
+    /**
+     * It is the same as {@see CHANGING_NAMES_OUTPUT}, but as a class selector - not specific.
+     */
+    LA_EN_TRANSLATION_RESULTS: ".gt-la-en-translation-result",
+    /**
+     * Selector for all autocomplete inputs on Changing names.
+     * It was added to provide autocomplete functionality and not to mess with already existing selectors
+     * and submit system based on type.
+     */
+    LA_EN_TRANSLATION_AUTOCOMPLETE_INPUTS: ".la-en-translation-autocomplete",
+
+
 
 };
