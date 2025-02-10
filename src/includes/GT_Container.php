@@ -30,8 +30,9 @@ class GT_Container {
 	private const NAME_DISTRIBUTION_SERVICE = 'name_distribution_service';
 
 	//endregion
+    private const LA_CZ_TRANSLATION_DAO = 'la_cz_translation_dao';
 
-	/**
+    /**
 	 * @var ?GT_Container Singleton instance of this class.
 	 */
 	protected static ?GT_Container $instance = null;
@@ -274,6 +275,15 @@ class GT_Container {
 
         return $this->objects[ self::EN_CZ_TRANSLATION_DAO ];
     }
+    public function get_la_cz_translation_dao(): GT_LA_CZ_translation_DAO {
+        if( ! isset( $this->objects[ self:: LA_CZ_TRANSLATION_DAO ] ) ) {
+            $database = $this->get_database();
+            $this->objects[self::LA_CZ_TRANSLATION_DAO] = new GT_LA_CZ_translation_DAO( $database );
+        }
+
+        return $this->objects[ self::LA_CZ_TRANSLATION_DAO ];
+    }
+
 
 	//endregion
 

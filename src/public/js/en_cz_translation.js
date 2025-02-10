@@ -35,6 +35,7 @@ function gt_cz_en_transcription(type) {
         action: "gt_en_cz_translation",
         word_cz: value,
         type: type
+
     }, function (data) {
         if (data.status === "success") {
             _gt_name_transcription_data_process(type, value, data.results, outputSelector, outputPrintSelector);
@@ -58,18 +59,19 @@ function gt_cz_en_transcription(type) {
  */
 function _gt_name_transcription_data_process(type, value, data, outputSelector, outputPrintSelector) {
     outputSelector.html(""); // Clear output
-    outputPrintSelector.html(`<h3>English word for ${value.toUpperCase()}:</h3>`);
+
 
     if ($.isEmptyObject(data)) {
         outputSelector.append("<tr><td>No results found.</td></tr>");
     } else {
         data.forEach(result => {
+            let translatedWord = result.word_en || result.word_la; // Rozpoznání správného klíče
             outputSelector.append(
                 `<tr>
-                    <td title='Click to copy' onclick='copy(this);' data-id='${result.id}'>${result.word_en}</td>
+                    <td title='Click to copy' onclick='copy(this);' data-id='${result.id}'>${translatedWord}</td>
                 </tr>`
             );
-            outputPrintSelector.append(`${result.word_en}<br>`);
+
         });
     }
 }

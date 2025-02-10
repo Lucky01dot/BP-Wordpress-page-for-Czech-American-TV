@@ -14,4 +14,5 @@ abstract class GT_Autocomplete_Type {
 	const NAME_DISTRIBUTION_MEP = "name-distribution-mep";
 	const NAME_DISTRIBUTION_LN = "name-distribution-ln";
     const TRANSLATION_EN_CZ = "cz-en-translation";
+    const TRANSLATION_LA_EN = "la-en-translation";
 }

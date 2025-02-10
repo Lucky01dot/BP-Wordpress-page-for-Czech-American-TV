@@ -18,6 +18,7 @@
  */
 abstract class GT_Tables {
     const EN_CZ_TRANSLATION = 'cz_en_translation';
+    const LA_CZ_TRANSLATION = 'la_cz_translation';
 	const FIRST_NAME_TRANSLATION =  "fn_translation";
 	const FIRST_NAME_DIMINUTIVE =  "fn_diminutive";
 	const LAST_NAME_EXPLANATION =  "ln_explanation";

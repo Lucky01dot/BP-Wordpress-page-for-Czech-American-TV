@@ -20,6 +20,7 @@ class GT_Database {
 	public GT_City_Table $city_table;
 	public GT_LN_Count_Table $ln_count_table;
     public GT_EN_CZ_Translation_Table $en_cz_translation_table;
+    public GT_LA_CZ_Translation_Table $la_cz_translation_table;
 
 	/**
 	 * GT_Database constructor.
@@ -45,9 +46,11 @@ class GT_Database {
 		$this->ln_table             = new GT_LN_Table( $table_prefix . GT_Tables::LAST_NAME );
 		$this->fn_table             = new GT_FN_Table( $table_prefix . GT_Tables::FIRST_NAME );
 		$this->ln_count_table       = new GT_LN_Count_Table( $table_prefix . GT_Tables::LAST_NAME_COUNT );
-        $this->en_cz_translation_table = new GT_EN_CZ_Translation_Table($table_prefix . GT_Tables::EN_CZ_TRANSLATION);
 
-		// Turnoff errors output
+        $this->en_cz_translation_table = new GT_EN_CZ_Translation_Table($table_prefix . GT_Tables::EN_CZ_TRANSLATION);
+        $this->la_cz_translation_table = new GT_LA_CZ_Translation_Table($table_prefix . GT_Tables::LA_CZ_TRANSLATION);
+
+        // Turnoff errors output
 		$this->wpdb->show_errors( false );
 	}
 
@@ -58,6 +61,7 @@ class GT_Database {
 	 */
 	protected function sorted_tables(): array {
 		return [
+            $this->la_cz_translation_table,
 			$this->fn_translation_table,
 			$this->fn_diminutive_table,
             $this->en_cz_translation_table,
@@ -68,7 +72,8 @@ class GT_Database {
 			$this->city_table,
 			$this->ln_table,
 			$this->fn_table,
-			$this->ln_count_table
+			$this->ln_count_table,
+
 		];
 	}
 

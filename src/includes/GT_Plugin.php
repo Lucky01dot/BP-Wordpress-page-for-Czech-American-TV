@@ -228,6 +228,9 @@ class GT_Plugin {
             case GT_Autocomplete_Type::TRANSLATION_EN_CZ:
                 $result = $this->plugin_public->plugin_en_cz_translation->autocomplete_cz_en_translation( $value );
                 break;
+            case GT_Autocomplete_Type::TRANSLATION_LA_EN:
+                $result = $this->plugin_public->plugin_en_cz_translation->autocomplete_la_cz_translation( $value );
+                break;
 			default:
 				$this->error( GT_Ajax_Error::INVALID_REQUEST_TYPE );
 		}

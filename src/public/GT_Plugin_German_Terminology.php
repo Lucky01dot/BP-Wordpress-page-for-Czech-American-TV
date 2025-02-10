@@ -313,11 +313,11 @@ class GT_Plugin_German_Terminology {
                    data-target="gt-german-terminology-german-city-print">Print</a>
             </div>
         </div>
-        <!-- Google Maps tlačítko -->
+
         <!-- Google Maps tlačítko -->
         <div class="row justify-content-center mt-3">
             <div class="col-12 text-center">
-                <button id="gt-show-on-map" class="btn btn-success">📍 Zobrazit na mapě</button>
+                <button id="gt-show-on-map" class="btn btn-primary">📍 Zobrazit na mapě</button>
             </div>
         </div>
 
@@ -329,10 +329,11 @@ class GT_Plugin_German_Terminology {
 
             <!-- Nová tlačítka pod mapou -->
             <div class="col-12 text-center mt-2">
-                <button id="gt-reset-map" class="btn btn-warning">🔄 Reset</button>
-                <button id="gt-toggle-markers" class="btn btn-secondary">📍 Ponechat body</button>
+                <button id="gt-reset-map" class="btn btn-primary">🔄 Reset</button>
+                <button id="gt-toggle-markers" class="btn btn-primary">📍 Ponechat body</button>
             </div>
         </div>
+
 
 
 
