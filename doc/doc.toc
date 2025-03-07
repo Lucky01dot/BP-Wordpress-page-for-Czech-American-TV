@@ -1,0 +1,34 @@
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\contentsline {chapter}{\chapternumberline {1}Úvod}{3}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {2}Analytická část}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Genealogie a její význam}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Technologický základ projektu}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Machine Learning v genealogii}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Word2Vec a jeho využití při překladu}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Matematický model Word2Vec}{7}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Praktická implementace Word2Vec}{7}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Databázové zpracování a použití Pythonu}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Analýza implementace Word2Vec}{8}{subsection.2.4.1}%
+\contentsline {chapter}{\chapternumberline {3}Realizační část}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Výběr řešení}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Obecný popis a architektura}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}German Terminology}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Name Distribution}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Důležité algoritmy a datové struktury}{13}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Ověřování funkčnosti a měření výkonu}{14}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Omezení a zkušenosti z realizace}{14}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Uživatelská příručka}{15}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Instalace pluginu}{15}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Použití pluginu}{15}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Správa překladů}{16}{subsection.3.8.3}%
+\contentsline {chapter}{\chapternumberline {4}Závěr}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Podrobnější analýza výkonu}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Možnosti budoucího rozšíření}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Praktická využitelnost}{18}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Srovnání s konkurencí}{18}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Výzvy a překážky během vývoje}{18}{section.4.5}%
+\contentsline {appendix}{\chapternumberline {A}Přílohy}{19}{appendix.A}%
+\contentsline {chapter}{Seznam obrázků}{25}{appendix*.2}%
+\contentsline {chapter}{Seznam tabulek}{27}{appendix*.3}%
+\contentsline {chapter}{Seznam výpisů}{29}{appendix*.4}%
