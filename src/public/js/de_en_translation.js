@@ -32,6 +32,7 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         var word = $('#gt-de-en-translation-input').val().trim();
 
+
         if (word !== '') {
             $.ajax({
                 url: gt_translation_data_de.ajaxurl,
@@ -44,6 +45,7 @@ jQuery(document).ready(function ($) {
                 success: function (response) {
                     if (response.success) {
                         $('#de-en-translation-output').html('<tr><td>' + response.data.translation + '</td></tr>');
+                        fetchWord2VecSuggestion(response.data.translation,$("#de-en-word2vec-output"))
 
                     } else {
                         $('#de-en-translation-output').html('<tr><td>No translation found.</td></tr>');
@@ -64,3 +66,21 @@ jQuery(document).ready(function ($) {
         input.focus(); // Zaměření zpět na vstupní pole
     });
 });
+
+function fetchWord2VecSuggestion(word, outputSelector) {
+    $.post(gt_Word2Vec_suggestion_de.url, { // Používáme správný objekt
+        _ajax_nonce: gt_Word2Vec_suggestion_de.nonce, // Používáme správný nonce
+        action: "gt_word2vec",
+        word: word,
+    }, function (data) {
+        if (data.status === "success") {
+            outputSelector.html(`
+                <p><strong>Similar Words:</strong> ${data.suggestions.join(", ")}</p>
+            `);
+        } else {
+            outputSelector.html("<p><strong>Error:</strong> No similar words found.</p>");
+        }
+    }, "json").fail(function () {
+        outputSelector.html("<p><strong>Error:</strong> Failed to fetch data.</p>");
+    });
+}

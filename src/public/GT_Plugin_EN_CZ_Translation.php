@@ -43,6 +43,11 @@ class GT_Plugin_EN_CZ_Translation {
         add_action('wp_ajax_gt_de_en_autocomplete', array($this, 'handle_ajax_autocomplete_de_en'));
         add_action('wp_ajax_nopriv_gt_de_en_autocomplete', array($this, 'handle_ajax_autocomplete_de_en'));
 
+        // Registrace AJAX akce
+        add_action('wp_ajax_gt_word2vec', array($this, 'handle_ajax_word2vec'));
+        add_action('wp_ajax_nopriv_gt_word2vec', array($this, 'handle_ajax_word2vec_cz_en'));
+
+
 
 
     }
@@ -50,7 +55,7 @@ class GT_Plugin_EN_CZ_Translation {
     public function enqueue_scripts(): void {
         if ($this->plugin_public->plugin->shortcode_check($this->shortcodes)) {
             wp_enqueue_script(
-                'gt_js_cz_en_translation',
+                'gt_js_en_cz_translation',
                 $this->plugin_public->plugin->plugin_dir_url() . 'public/js/en_cz_translation.js',
                 array('jquery', 'gt_js_request_types')
             );
@@ -71,11 +76,86 @@ class GT_Plugin_EN_CZ_Translation {
                 '_ajax_nonce' => wp_create_nonce(GT_PREFIX . 'nonce')
             ));
 
+            wp_localize_script('gt_js_en_cz_translation', 'gt_Word2Vec_suggestion_cz', array(
+                'url' => admin_url('admin-ajax.php'),
+                'nonce' => wp_create_nonce('gt_word2vec'),
+            ));
+
+            wp_localize_script('gt_js_de_en_translation', 'gt_Word2Vec_suggestion_de', array(
+                'url' => admin_url('admin-ajax.php'),
+                'nonce' => wp_create_nonce('gt_word2vec'),
+            ));
+
+            wp_localize_script('gt_js_la_en_translation', 'gt_Word2Vec_suggestion_la', array(
+                'url' => admin_url('admin-ajax.php'),
+                'nonce' => wp_create_nonce('gt_word2vec'),
+            ));
+
+
+
+
+
+
+
 
 
 
         }
     }
+    public function handle_ajax_word2vec(): void {
+        check_ajax_referer('gt_word2vec', '_ajax_nonce');
+
+        $word = isset($_POST['word']) ? sanitize_text_field($_POST['word']) : '';
+
+        if (empty($word)) {
+            error_log("[ERROR] No word provided.");
+            wp_send_json(['status' => 'error', 'message' => 'No word provided.']);
+            return;
+        }
+
+        error_log("[INFO] Fetching similar words for: " . $word);
+        error_log("[DEBUG] AJAX Request: word={$word}");
+
+        // Získání podobných slov z Word2Vec FastAPI serveru
+        $similar_words = $this->fetch_word2vec_suggestions($word);
+
+        wp_send_json([
+            'status' => 'success',
+            'suggestions' => $similar_words,
+        ]);
+    }
+
+    /**
+     * Volání Word2Vec API na vlastním serveru
+     */
+    private function fetch_word2vec_suggestions(string $word): array {
+        $api_url = "http://127.0.0.1:5000/word2vec?word=" . urlencode($word);
+
+        error_log("[DEBUG] API Request: " . $api_url); // Logování API URL
+
+        $response = wp_remote_get($api_url, ['timeout' => 15]);
+
+        if (is_wp_error($response)) {
+            error_log("[ERROR] Word2Vec API request failed.");
+            return ["No suggestion"];
+        }
+
+        $body = json_decode(wp_remote_retrieve_body($response), true);
+        error_log("[DEBUG] API Response: " . print_r($body, true)); // Log odpovědi
+
+        return $body['suggestions'] ?? ["No suggestion"];
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     public function handle_ajax_translation(): void {
         check_ajax_referer(GT_PREFIX . 'nonce');
@@ -238,6 +318,14 @@ class GT_Plugin_EN_CZ_Translation {
                 <div class="col-2 col-md-1 mt-5 text-center">
                     <a href="javascript:void(0);" class="gt-print-btn" data-target="cz-en-translation-output">Print</a>
                 </div>
+
+                <!-- Word2Vec -->
+                <div class="col-10 col-md-5 mt-2">
+                    <label for="cz-en-word2vec-output">Nearest Word2Vec Suggestion:</label>
+                    <table id="cz-en-word2vec-output" class="wrapped-output-table">
+                        <tr><td>No suggestion.</td></tr>
+                    </table>
+                </div>
             </div>
         </form>
 
@@ -289,6 +377,14 @@ class GT_Plugin_EN_CZ_Translation {
 
                 <div class="col-2 col-md-1 mt-5 text-center">
                     <a href="javascript:void(0);" class="gt-print-btn" data-target="de-en-translation-output">Print</a>
+                </div>
+
+                <!-- Word2Vec -->
+                <div class="col-10 col-md-5 mt-2">
+                    <label for="de-en-word2vec-output">Nearest Word2Vec Suggestion:</label>
+                    <table id="de-en-word2vec-output" class="wrapped-output-table">
+                        <tr><td>No suggestion.</td></tr>
+                    </table>
                 </div>
             </div>
             <!-- Speciální znaky -->
@@ -353,6 +449,14 @@ class GT_Plugin_EN_CZ_Translation {
                 <div class="col-2 col-md-1 mt-5 text-center">
                     <a href="javascript:void(0);" class="gt-print-btn" data-target="la-en-translation-output">Print</a>
                 </div>
+                <!-- Word2Vec -->
+                <div class="col-10 col-md-5 mt-2">
+                    <label for="la-en-word2vec-output">Nearest Word2Vec Suggestion:</label>
+                    <table id="la-en-word2vec-output" class="wrapped-output-table">
+                        <tr><td>No suggestion.</td></tr>
+                    </table>
+                </div>
+                
             </div>
         </form>
 

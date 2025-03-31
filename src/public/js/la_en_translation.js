@@ -21,10 +21,14 @@ function gt_la_cz_en_translation(type) {
     const inputSelector = $(GT_SELECTOR.LA_EN_TRANSLATION_AUTOCOMPLETE_INPUTS.replace("${type}", type));
     const outputSelector = $(GT_SELECTOR.LA_EN_TRANSLATION_OUTPUT.replace("${type}", type));
     const outputPrintSelector = $(GT_SELECTOR.LA_EN_TRANSLATION_PRINT_OUTPUT.replace("${type}", type));
+    const word2VecOutputSelector = $("#la-en-word2vec-output");
 
     // Disable input and show loading
     inputSelector.prop('disabled', true);
     outputSelector.html("<td>Loading...</td>");
+    word2VecOutputSelector.html("<td>Loading Word2Vec...</td>"); // Přidáme loading i pro Word2Vec
+
+
 
     const value = inputSelector.val();
 
@@ -50,6 +54,7 @@ function gt_la_cz_en_translation(type) {
                             <td title='Click to copy' onclick='copy(this);'>${response.data.translation}</td>
                         </tr>`
                     );
+                    fetchWord2VecSuggestion(response.data.translation,word2VecOutputSelector);
                 } else {
                     outputSelector.html("<td>Error: Unable to retrieve English translation.</td>");
                 }
@@ -68,3 +73,21 @@ function gt_la_cz_en_translation(type) {
         inputSelector.prop('disabled', false);
     });
 }
+function fetchWord2VecSuggestion(word, outputSelector) {
+    $.post(gt_Word2Vec_suggestion_la.url, { // Používáme správný objekt
+        _ajax_nonce: gt_Word2Vec_suggestion_la.nonce, // Používáme správný nonce
+        action: "gt_word2vec",
+        word: word,
+    }, function (data) {
+        if (data.status === "success") {
+            outputSelector.html(`
+                <p><strong>Similar Words:</strong> ${data.suggestions.join(", ")}</p>
+            `);
+        } else {
+            outputSelector.html("<p><strong>Error:</strong> No similar words found.</p>");
+        }
+    }, "json").fail(function () {
+        outputSelector.html("<p><strong>Error:</strong> Failed to fetch data.</p>");
+    });
+}
+
