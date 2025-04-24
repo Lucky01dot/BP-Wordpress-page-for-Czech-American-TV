@@ -4,7 +4,7 @@
  * Plugin Name: Genealogy Tools
  * Description: A plugin full of tools for Czech Genealogy.
  * Version: ioi-6.0
- * Author: Jakub Santora, Miroslav Krysl, Tomas Kveton, Zhanel Mukanova, Jan Pizur
+ * Author: Jakub Santora, Miroslav Krysl, Tomas Kveton, Zhanel Mukanova, Jan Pizur, Jan Cacha
  */
 
 

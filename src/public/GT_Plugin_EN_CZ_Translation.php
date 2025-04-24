@@ -128,7 +128,7 @@ class GT_Plugin_EN_CZ_Translation {
     /**
      * Volání Word2Vec API na vlastním serveru
      */
-    private function fetch_word2vec_suggestions(string $word): array {
+    public function fetch_word2vec_suggestions(string $word): array {
         $api_url = "http://127.0.0.1:5000/word2vec?word=" . urlencode($word);
 
         error_log("[DEBUG] API Request: " . $api_url); // Logování API URL
