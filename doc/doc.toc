@@ -1,34 +1,90 @@
 \babel@toc {czech}{}\relax 
 \babel@toc {czech}{}\relax 
 \contentsline {chapter}{\chapternumberline {1}Úvod}{3}{chapter.1}%
-\contentsline {chapter}{\chapternumberline {2}Analytická část}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Genealogie a její význam}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Technologický základ projektu}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Machine Learning v genealogii}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Word2Vec a jeho využití při překladu}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Matematický model Word2Vec}{7}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Praktická implementace Word2Vec}{7}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Databázové zpracování a použití Pythonu}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Analýza implementace Word2Vec}{8}{subsection.2.4.1}%
-\contentsline {chapter}{\chapternumberline {3}Realizační část}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Výběr řešení}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Obecný popis a architektura}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}German Terminology}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Name Distribution}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Důležité algoritmy a datové struktury}{13}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Ověřování funkčnosti a měření výkonu}{14}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Omezení a zkušenosti z realizace}{14}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Uživatelská příručka}{15}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Instalace pluginu}{15}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Použití pluginu}{15}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Správa překladů}{16}{subsection.3.8.3}%
-\contentsline {chapter}{\chapternumberline {4}Závěr}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Podrobnější analýza výkonu}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Možnosti budoucího rozšíření}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Praktická využitelnost}{18}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Srovnání s konkurencí}{18}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Výzvy a překážky během vývoje}{18}{section.4.5}%
-\contentsline {appendix}{\chapternumberline {A}Přílohy}{19}{appendix.A}%
-\contentsline {chapter}{Seznam obrázků}{25}{appendix*.2}%
-\contentsline {chapter}{Seznam tabulek}{27}{appendix*.3}%
-\contentsline {chapter}{Seznam výpisů}{29}{appendix*.4}%
+\contentsline {chapter}{\chapternumberline {2}Teoretická část}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Genealogie a její význam v rámci Czech-American TV}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Genealogická mapa České republiky}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Německo-české názvosloví historických měst}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Machine Learning v genealogii}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Word2Vec a jeho využití při překladu}{7}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Matematický model Word2Vec}{8}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}Skip-Gram}{8}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}CBOW (Continuous Bag of Words)}{8}{subsubsection.2.4.2.2}%
+\contentsline {section}{\numberline {2.5}Rešerše existujících řešení pro genealogický výzkum}{9}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Přehled dostupných genealogických platforem}{9}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Srovnání s projektem}{9}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Analýza potřeb uživatelů}{10}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Analýza technologických možností}{10}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Výběr Word2Vec a jeho alternativy}{10}{subsection.2.7.1}%
+\contentsline {section}{\numberline {2.8}Analýza datových zdrojů}{11}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Analýza rizik a omezení}{11}{section.2.9}%
+\contentsline {chapter}{\chapternumberline {3}Analytická část}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Analýza požadavků}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Současný stav a motivace ke změně}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Cílová skupina a specifika}{15}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Požadavky na funkčnost pluginu}{15}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Technické požadavky a omezení}{15}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Možnosti realizace a návrhové rozhodnutí}{16}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Návrh řešení}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Výběr překládacích služeb}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Integrace Word2Vec}{18}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Zpracování geografických dat}{18}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Technická specifikace systému}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Výkonové a bezpečnostní hledisko}{19}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Uživatelské scénáře a příklady použití}{19}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Rozšiřitelnost a budoucí možnosti integrace}{20}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Shrnutí analytické části}{20}{section.3.7}%
+\contentsline {chapter}{\chapternumberline {4}Implementační část}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Obecný popis a architektura}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Zpracování dat}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Zpracování českých genealogických překladů do angličtiny}{23}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Zpracování latinských překladů do češtiny}{24}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Struktura databáze}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Administrační rozhraní pro správu genealogických dat}{26}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Hlavní funkce administračního rozhraní}{26}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Implementace administračního rozhraní}{27}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Implementace Word2Vec pro CzechAmericanTV}{28}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Využití modelu v překladovém systému}{28}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Klíčové knihovny a nástroje}{28}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Načtení modelu Word2Vec}{29}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Výpočet vektoru věty}{30}{subsection.4.6.4}%
+\contentsline {subsection}{\numberline {4.6.5}REST API pro získání podobných slov}{30}{subsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.6.6}Spuštění aplikace}{31}{subsection.4.6.6}%
+\contentsline {subsection}{\numberline {4.6.7}Optimalizace a výzvy}{31}{subsection.4.6.7}%
+\contentsline {subsection}{\numberline {4.6.8}Příklad použití}{31}{subsection.4.6.8}%
+\contentsline {section}{\numberline {4.7}Implementace překladačů}{32}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Překladač z češtiny do angličtiny}{32}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Překladač z němčiny do angličtiny}{33}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Překladač z latiny do angličtiny}{34}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Zhodnocení a výhody implementace}{34}{subsection.4.7.4}%
+\contentsline {section}{\numberline {4.8}Implementace mapových pluginů}{35}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Plugin Německá terminologie}{35}{subsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.1}Struktura implementace}{35}{subsubsection.4.8.1.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.2}Inicializace mapy}{36}{subsubsection.4.8.1.2}%
+\contentsline {subsubsection}{\numberline {4.8.1.3}Vyhledávání souřadnic}{36}{subsubsection.4.8.1.3}%
+\contentsline {subsubsection}{\numberline {4.8.1.4}Uživatelské ovládání mapy}{36}{subsubsection.4.8.1.4}%
+\contentsline {subsection}{\numberline {4.8.2}Plugin Distribuce příjmení}{37}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}Funkce pro vykreslování mapy}{38}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}Přepínání mezi režimy zobrazení}{38}{subsubsection.4.8.2.2}%
+\contentsline {section}{\numberline {4.9}Omezení a zkušenosti z realizace}{39}{section.4.9}%
+\contentsline {chapter}{\chapternumberline {5}Testování}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Metodika testování}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Výsledky výkonových testů}{41}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Správnost překladu podle typu slov}{42}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sémantické vyhledávání pomocí Word2Vec}{43}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Zátěžové testy}{43}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Jednotkové testování klíčových komponent}{44}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Závěry testování}{45}{section.5.7}%
+\contentsline {chapter}{\chapternumberline {6}Závěr}{47}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {7}Elektronické přílohy}{49}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Uživatelská příručka}{50}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Instalace pluginu}{50}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Použití pluginu}{50}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Správa překladů}{53}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Programátorská příručka}{54}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Instalace a struktura projektu}{54}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Propojení s Word2Vec API (FastAPI)}{54}{subsection.7.2.2}%
+\contentsline {chapter}{Bibliografie}{57}{chapter*.12}%
+\contentsline {chapter}{Seznam obrázků}{59}{chapter*.13}%
+\contentsline {chapter}{Seznam tabulek}{61}{chapter*.14}%
+\contentsline {chapter}{Seznam výpisů}{63}{chapter*.15}%

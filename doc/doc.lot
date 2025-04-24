@@ -4,4 +4,10 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Porovnání vizualizačních režimů}}{37}{table.4.1}%
+\addvspace {10pt}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Statistické srovnání rychlosti překladových metod v sekundách}}{41}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Správnost překladu podle typu slov a vlivu Word2Vec}}{42}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Sémanticky podobná slova podle Word2Vec}}{43}{table.5.3}%
+\addvspace {10pt}
 \addvspace {10pt}

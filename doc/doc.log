@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.4)  7 MAR 2025 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.4)  23 APR 2025 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5628,78 +5628,117 @@ traLight-lf-ts1' already exists, duplicates ignored
 \FASThesis@button@font@size=\skip295
 \FASThesis@sans@font@size=\skip296
 \FASThesis@typewriter@font@size=\skip297
+) (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen360
+\captionmargin=\dimen361
+\caption@leftmargin=\dimen362
+\caption@rightmargin=\dimen363
+\caption@width=\dimen364
+\caption@indent=\dimen365
+\caption@parindent=\dimen366
+\caption@hangindent=\dimen367
+Package caption Info: memoir document class detected.
+
+(C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-memoir.
+sto
+File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to th
+e memoir document class (AR)
+))
+\c@caption@flags=\count560
+\c@continuedfloat=\count561
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen368
+\caption@adjustwidth@linewidth=\dimen369
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)) (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count562
+\float@exts=\toks56
+\float@box=\box98
+\@float@everytoks=\toks57
+\@floatcapt=\box99
 )
-LaTeX Info: Redefining \oldstylenums on input line 19.
+LaTeX Info: Redefining \oldstylenums on input line 48.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'czech'.
- (doc.aux)
+
+(doc.aux)
 \openout1 = `doc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/zcochmi/m/it on input line 19.
+LaTeX Font Info:    Checking defaults for OML/zcochmi/m/it on input line 48.
 LaTeX Font Info:    Trying to load font information for OML+zcochmi on input li
-ne 19.
+ne 48.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/cochineal\omlzcochmi.fd
 File: omlzcochmi.fd 2024/03/06 Fontinst v1.933 font definitions for OML/zcochmi
 .
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-19.
+48.
  (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 19.
+ 48.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 19.
+e 48.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-\c@mv@tabular=\count560
-\c@mv@boldtabular=\count561
-LaTeX Info: Command `\dddot' is already robust on input line 19.
-LaTeX Info: Command `\ddddot' is already robust on input line 19.
-LaTeX Info: Redefining \microtypecontext on input line 19.
-Package microtype Info: Applying patch `toc' on input line 19.
-Package microtype Info: Applying patch `eqnum' on input line 19.
-Package microtype Info: Applying patch `footnote' on input line 19.
-Package microtype Info: Applying patch `verbatim' on input line 19.
-LaTeX Info: Redefining \microtypesetup on input line 19.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+\c@mv@tabular=\count563
+\c@mv@boldtabular=\count564
+LaTeX Info: Command `\dddot' is already robust on input line 48.
+LaTeX Info: Command `\ddddot' is already robust on input line 48.
+LaTeX Info: Redefining \microtypecontext on input line 48.
+Package microtype Info: Applying patch `toc' on input line 48.
+Package microtype Info: Applying patch `eqnum' on input line 48.
+Package microtype Info: Applying patch `footnote' on input line 48.
+Package microtype Info: Applying patch `verbatim' on input line 48.
+LaTeX Info: Redefining \microtypesetup on input line 48.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 10, shrink: 10, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 19.
+LaTeX Info: Redefining \showhyphens on input line 48.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: Adjustment of character kerning enabled.
@@ -5735,23 +5774,23 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'doc.bbl' not found.
 
 No file doc.bbl.
-Package biblatex Info: Reference section=0 on input line 19.
-Package biblatex Info: Reference segment=0 on input line 19.
+Package biblatex Info: Reference section=0 on input line 48.
+Package biblatex Info: Reference segment=0 on input line 48.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count562
-\scratchdimen=\dimen360
-\scratchbox=\box98
-\nofMPsegments=\count563
-\nofMParguments=\count564
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count565
-\MPscratchDim=\dimen361
-\MPnumerator=\count566
-\makeMPintoPDFobject=\count567
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count565
+\scratchdimen=\dimen370
+\scratchbox=\box100
+\nofMPsegments=\count566
+\nofMParguments=\count567
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count568
+\MPscratchDim=\dimen371
+\MPnumerator=\count569
+\makeMPintoPDFobject=\count570
+\everyMPtoPDFconversion=\toks59
 )
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -5763,7 +5802,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count568
+\c@lstlisting=\count571
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -5799,14 +5838,17 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 48.
 (doc.out) (doc.out)
 \@outlinefile=\write6
 \openout6 = `doc.out'.
 
-\FASThesis@titlebox=\box99
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\FASThesis@titlebox=\box101
 LaTeX Font Info:    Trying to load font information for T1+GTAmerica-LF on inpu
-t line 20.
+t line 49.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/GTAmerica\t1gtamerica-l
 f.fd
@@ -5818,7 +5860,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+mincochineal on inp
-ut line 20.
+ut line 49.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/cochineal\ot1mincochine
 al.fd
@@ -5826,83 +5868,83 @@ File: ot1mincochineal.fd 2022/02/04 (msharpe) Font definitions for OT1/mincochi
 neal.
 )
 LaTeX Font Info:    Font shape `OT1/mincochineal/m/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `mincochineal' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/mincochineal/m/n' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `OT1/mincochineal/m/n' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(Font)              scaled to size 6.6pt on input line 49.
 LaTeX Font Info:    Font shape `OML/zcochmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `OML/zcochmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `OML/zcochmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(Font)              scaled to size 6.6pt on input line 49.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(Font)              scaled to size 6.6pt on input line 49.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(Font)              scaled to size 6.6pt on input line 49.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-20.
+49.
  (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(Font)              scaled to size 6.6pt on input line 49.
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-20.
+49.
  (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(Font)              scaled to size 6.6pt on input line 49.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-20.
+49.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(Font)              scaled to size 6.6pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 20.
+(Font)              scaled to size 8.8pt on input line 49.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 20.
-\FASThesis@auxdim@lx=\dimen362
-\FASThesis@auxdim@ly=\dimen363
+(Font)              scaled to size 6.6pt on input line 49.
+\FASThesis@auxdim@lx=\dimen372
+\FASThesis@auxdim@ly=\dimen373
 
 
 pdfTeX warning: miktex-pdftex.exe (file ./img/kiv-cmyk-cz.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<img/kiv-cmyk-cz.pdf, id=150, 722.7pt x 134.5025pt>
+<img/kiv-cmyk-cz.pdf, id=42, 722.7pt x 134.5025pt>
 File: img/kiv-cmyk-cz.pdf Graphic file (type pdf)
 <use img/kiv-cmyk-cz.pdf>
-Package pdftex.def Info: img/kiv-cmyk-cz.pdf  used on input line 20.
+Package pdftex.def Info: img/kiv-cmyk-cz.pdf  used on input line 49.
 (pdftex.def)             Requested size: 385.25673pt x 71.70093pt.
 
 
@@ -5910,10 +5952,10 @@ Package pdftex.def Info: img/kiv-cmyk-cz.pdf  used on input line 20.
 
 pdfTeX warning: miktex-pdftex.exe (file ./img/background-kiv.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<img/background-kiv.pdf, id=151, 597.50786pt x 845.04686pt>
+<img/background-kiv.pdf, id=43, 597.50786pt x 845.04686pt>
 File: img/background-kiv.pdf Graphic file (type pdf)
 <use img/background-kiv.pdf>
-Package pdftex.def Info: img/background-kiv.pdf  used on input line 20.
+Package pdftex.def Info: img/background-kiv.pdf  used on input line 49.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
 [1
 
@@ -5924,17 +5966,17 @@ u.enc} <./img/background-kiv.pdf> <./img/kiv-cmyk-cz.pdf>]
 [2
 
 ]
-\FASThesis@titlebox@bw=\box100
-\FASThesis@auxdim@lx=\dimen364
-\FASThesis@auxdim@ly=\dimen365
+\FASThesis@titlebox@bw=\box102
+\FASThesis@auxdim@lx=\dimen374
+\FASThesis@auxdim@ly=\dimen375
 
 
 pdfTeX warning: miktex-pdftex.exe (file ./img/kiv-black-cz.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<img/kiv-black-cz.pdf, id=177, 722.7pt x 134.5025pt>
+<img/kiv-black-cz.pdf, id=69, 722.7pt x 134.5025pt>
 File: img/kiv-black-cz.pdf Graphic file (type pdf)
 <use img/kiv-black-cz.pdf>
-Package pdftex.def Info: img/kiv-black-cz.pdf  used on input line 20.
+Package pdftex.def Info: img/kiv-black-cz.pdf  used on input line 49.
 (pdftex.def)             Requested size: 385.25673pt x 71.70093pt.
 
 
@@ -5943,10 +5985,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \frontpages[tm]
+l.49 \frontpages[tm]
                      [1 <./img/kiv-black-cz.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+Cochineal-TLF on in
-put line 20.
+put line 49.
 
 (C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/cochineal\ts1cochineal-
 tlf.fd
@@ -5954,15 +5996,15 @@ File: TS1Cochineal-TLF.fd 2016/01/19 (msharpe) Font definitions for TS1/Cochine
 al-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/Cochineal-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Cochineal-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/Cochineal-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/sl' will be
-(Font)              scaled to size 12.0pt on input line 20.
+(Font)              scaled to size 12.0pt on input line 49.
 
 
 
@@ -5970,7 +6012,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \frontpages[tm]
+l.49 \frontpages[tm]
                      [2{C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/enc/
 dvips/cochineal/coch_rwqxgv.enc}{C:/Users/honza/AppData/Local/Programs/MiKTeX/f
 onts/enc/dvips/cochineal/coch_cuw7wa.enc}{C:/Users/honza/AppData/Local/Programs
@@ -5982,44 +6024,50 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \frontpages[tm]
+l.49 \frontpages[tm]
                     
-<zadani.pdf, id=195, page=1, 597.51233pt x 845.0471pt>
-File: zadani.pdf Graphic file (type pdf)
-<use zadani.pdf, page 1>
-Package pdftex.def Info: zadani.pdf , page1 used on input line 20.
+<A22B0019P_zadani.pdf, id=87, page=1, 597.51233pt x 845.0471pt>
+File: A22B0019P_zadani.pdf Graphic file (type pdf)
+<use A22B0019P_zadani.pdf, page 1>
+Package pdftex.def Info: A22B0019P_zadani.pdf , page1 used on input line 49.
 (pdftex.def)             Requested size: 597.51086pt x 845.08372pt.
  [1
 
 
- <./zadani.pdf>]
+ <./A22B0019P_zadani.pdf>]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \frontpages[tm]
-                     [2]
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+l.49 \frontpages[tm]
+                    
+<A22B0019P_zadani.pdf, id=113, page=2, 597.51233pt x 845.0471pt>
+File: A22B0019P_zadani.pdf Graphic file (type pdf)
+<use A22B0019P_zadani.pdf, page 2>
+Package pdftex.def Info: A22B0019P_zadani.pdf , page2 used on input line 49.
+(pdftex.def)             Requested size: 597.51086pt x 845.08372pt.
+ [2 <./A22B0019P_zadani.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 
  []
 
 
 
 LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 20.
+(Font)              scaled to size 10.95pt on input line 49.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \frontpages[tm]
+l.49 \frontpages[tm]
                      [1]
 
 
@@ -6027,306 +6075,778 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \frontpages[tm]
+l.49 \frontpages[tm]
                      [2]
 
 [3]
 
 [4
 
-] (doc.toc
+]
+No file doc.toc.
+
 
 [1
 
-])
+]
+
+[2
+
+]
+Overfull \hbox (1.8pt too wide) detected at line 52
+[] 
+ []
+
+
+
+[3]
 
 LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 21.
-\FASThesis@runninghead@rule@offset=\dimen366
+(Font)              scaled to size 10.95pt on input line 66.
+\FASThesis@runninghead@rule@offset=\dimen376
 
 Class memoir Warning: The material used in the headers is too large
 (28.99998pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 21.
+(in both cases you will find help in the memoir manual). on input line 66.
 
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[2]
-Overfull \hbox (1.8pt too wide) detected at line 23
+[4]
+Overfull \hbox (1.8pt too wide) detected at line 66
 [] 
  []
 
-LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 33.
+<genealogy_map.png, id=167, 624.53325pt x 514.92375pt>
+File: genealogy_map.png Graphic file (type png)
+<use genealogy_map.png>
+Package pdftex.def Info: genealogy_map.png  used on input line 82.
+(pdftex.def)             Requested size: 309.56717pt x 255.22983pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-[3
+
+[5
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[4
 
-]
-Overfull \hbox (1.8pt too wide) detected at line 37
-[] 
- []
-
-
-
-[5]
-
-\FASThesis@runninghead@rule@offset=\dimen367
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[6]
-LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 88.
-LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 88.
-
-
-\FASThesis@runninghead@rule@offset=\dimen368
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[7{C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cochineal/coch_
-gcpa6j.enc}]
-<database.png, id=302, 1128.215pt x 766.865pt>
-File: database.png Graphic file (type png)
-<use database.png>
-Package pdftex.def Info: database.png  used on input line 124.
-(pdftex.def)             Requested size: 309.56717pt x 210.41463pt.
-
-
-\FASThesis@runninghead@rule@offset=\dimen369
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[8 <./database.png>]
-
-\FASThesis@runninghead@rule@offset=\dimen370
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[9]
-
-[10
-
-]
-Overfull \hbox (1.8pt too wide) detected at line 144
-[] 
- []
-
-
-
-[11]
-<genealogy_components.png, id=323, 793.96625pt x 633.36626pt>
-File: genealogy_components.png Graphic file (type png)
-<use genealogy_components.png>
-Package pdftex.def Info: genealogy_components.png  used on input line 168.
-(pdftex.def)             Requested size: 309.56717pt x 246.95386pt.
-
-Overfull \hbox (4.4405pt too wide) in paragraph at lines 179--180
-[]\T1/Cochineal-TLF/m/n/12 (-10) Po klik-nutí na tla-£ítko ^^RZobrazit na map¥^
-^P se pro-vede do-taz na Open-StreetMap
- []
-
-
-
-\FASThesis@runninghead@rule@offset=\dimen371
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[12 <./genealogy_components.png>]
-
-\FASThesis@runninghead@rule@offset=\dimen372
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[13]
-
-\FASThesis@runninghead@rule@offset=\dimen373
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[14]
-
-\FASThesis@runninghead@rule@offset=\dimen374
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[15]
-
-\FASThesis@runninghead@rule@offset=\dimen375
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[16]
-Overfull \hbox (1.8pt too wide) detected at line 297
-[] 
- []
-
-
-
-[17
-
-]
-
-\FASThesis@runninghead@rule@offset=\dimen376
-
-Overfull \vbox (14.49998pt too high) has occurred while \output is active []
-
-
-[18]
-Overfull \hbox (1.8pt too wide) detected at line 358
-[] 
- []
-
-File: database.png Graphic file (type png)
-<use database.png>
-Package pdftex.def Info: database.png  used on input line 362.
-(pdftex.def)             Requested size: 309.56717pt x 210.41463pt.
-File: genealogy_components.png Graphic file (type png)
-<use genealogy_components.png>
-Package pdftex.def Info: genealogy_components.png  used on input line 368.
-(pdftex.def)             Requested size: 309.56717pt x 246.95386pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<plugin_backend.png, id=371, 611.886pt x 462.528pt>
-File: plugin_backend.png Graphic file (type png)
-<use plugin_backend.png>
-Package pdftex.def Info: plugin_backend.png  used on input line 374.
-(pdftex.def)             Requested size: 309.56717pt x 234.00177pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<database_status.png, id=372, 1011.78pt x 486.618pt>
-File: database_status.png Graphic file (type png)
-<use database_status.png>
-Package pdftex.def Info: database_status.png  used on input line 380.
-(pdftex.def)             Requested size: 309.56717pt x 148.88977pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<cz_en_translation.png, id=373, 542.62724pt x 199.947pt>
-File: cz_en_translation.png Graphic file (type png)
-<use cz_en_translation.png>
-Package pdftex.def Info: cz_en_translation.png  used on input line 386.
-(pdftex.def)             Requested size: 309.56717pt x 114.06859pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<German_Terminology.png, id=374, 522.753pt x 476.37975pt>
-File: German_Terminology.png Graphic file (type png)
-<use German_Terminology.png>
-Package pdftex.def Info: German_Terminology.png  used on input line 392.
-(pdftex.def)             Requested size: 309.56717pt x 282.10106pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<name_distribution_map.png, id=375, 524.55975pt x 399.29175pt>
-File: name_distribution_map.png Graphic file (type png)
-<use name_distribution_map.png>
-Package pdftex.def Info: name_distribution_map.png  used on input line 398.
-(pdftex.def)             Requested size: 309.56717pt x 235.64711pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<performance_tests.png, id=376, 816.651pt x 101.178pt>
-File: performance_tests.png Graphic file (type png)
-<use performance_tests.png>
-Package pdftex.def Info: performance_tests.png  used on input line 404.
-(pdftex.def)             Requested size: 309.56717pt x 38.35385pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[19
-
-]
 
 \FASThesis@runninghead@rule@offset=\dimen377
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[20 <./plugin_backend.png>]
+[6 <./genealogy_map.png>]
+
+LaTeX Warning: Citation 'mikolov2013word2vec' on page 7 undefined on input line
+ 112.
+
+
 
 \FASThesis@runninghead@rule@offset=\dimen378
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[21 <./database_status.png> <./cz_en_translation.png>]
+[7]
+Overfull \hbox (0.43243pt too wide) in paragraph at lines 133--133
+|[] []| 
+ []
+
+
 
 \FASThesis@runninghead@rule@offset=\dimen379
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[22 <./German_Terminology.png> <./name_distribution_map.png>]
+[8]
+LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 163.
+LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 163.
+
 
 \FASThesis@runninghead@rule@offset=\dimen380
 
 Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
 
-[23 <./performance_tests.png>]
+[9{C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cochineal/coch_
+gcpa6j.enc}]
 
-[24
+\FASThesis@runninghead@rule@offset=\dimen381
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[10]
+
+\FASThesis@runninghead@rule@offset=\dimen382
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[11]
+
+[12
 
 ]
+Overfull \hbox (1.8pt too wide) detected at line 240
+[] 
+ []
 
-LaTeX Warning: Empty bibliography on input line 409.
 
-(doc.lof)
 
-[25
+[13]
+Overfull \hbox (1.23503pt too wide) in paragraph at lines 263--264
+[]\T1/Cochineal-TLF/m/n/12 (-10) Zadavatel na zá-klad¥ zku-²e-ností s pro-vo-ze
+m stá-va-jící ge-ne-a-lo-gické sekce a zp¥tné
+ []
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen383
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[14]
+
+\FASThesis@runninghead@rule@offset=\dimen384
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[15]
+LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 308.
+
+
+\FASThesis@runninghead@rule@offset=\dimen385
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[16]
+
+\FASThesis@runninghead@rule@offset=\dimen386
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[17]
+LaTeX Font Info:    Trying to load font information for T1+newtxtt on input lin
+e 364.
+
+(C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/fonts/newtxtt\t1newtxtt.fd
+File: t1newtxtt.fd 2020/02/15 Font definitions for T1/newtxtt.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `newtxtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (12.33708pt too wide) in paragraph at lines 372--373
+\T1/Cochineal-TLF/m/n/12 (-10) Pro vi-zu-a-li-zaci his-to-ric-kých ná-zv· m¥st 
+v rámci ƒeské re-pub-liky byla po-u-ºita knihovna
+ []
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen387
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[18{C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtxtt/txttAe
+c.enc}]
+
+\FASThesis@runninghead@rule@offset=\dimen388
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[19]
+
+\FASThesis@runninghead@rule@offset=\dimen389
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[20]
+Overfull \hbox (1.8pt too wide) detected at line 438
+[] 
+ []
+
+
+
+[21
 
 ]
+<genealogy_components.png, id=294, 793.96625pt x 633.36626pt>
+File: genealogy_components.png Graphic file (type png)
+<use genealogy_components.png>
+Package pdftex.def Info: genealogy_components.png  used on input line 466.
+(pdftex.def)             Requested size: 386.95749pt x 308.68991pt.
 
-[26
+Overfull \hbox (3.5969pt too wide) in paragraph at lines 472--473
+\T1/Cochineal-TLF/m/n/12 (-10) po-skytla or-ga-ni-zace Czech-American TV. Tyto 
+sou-bory p°ed-sta-vo-valy vý-chozí zdroje
+ []
 
-] (doc.lot)
+
+
+\FASThesis@runninghead@rule@offset=\dimen390
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[22 <./genealogy_components.png>]
+Overfull \hbox (8.10588pt too wide) in paragraph at lines 492--493
+\T1/Cochineal-TLF/m/n/12 (-10) Vstupní sou-bor ob-sa-hu-jící £eské vý-razy a je
+-jich an-g-lické p°e-klady byl nej-prve p°edzpra-
+ []
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen391
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[23]
+Overfull \hbox (28.36475pt too wide) in paragraph at lines 506--507
+[]\T1/Cochineal-TLF/m/n/12 (-10) Kaºdý zá-znam v ta-bulce ob-sa-huje uni-kátní 
+iden-ti-fi-ká-tor (\T1/newtxtt/m/n/11.03998 id\T1/Cochineal-TLF/m/n/12 (-10) ),
+ £eský vý-raz (\T1/newtxtt/m/n/11.03998 czech_word\T1/Cochineal-TLF/m/n/12 (-10
+) )
+ []
+
+
+Overfull \hbox (11.26393pt too wide) in paragraph at lines 514--515
+\T1/Cochineal-TLF/m/n/12 (-10) kud je de-te-ko-váno kó-do-vání \T1/newtxtt/m/n/
+11.03998 Windows-1254\T1/Cochineal-TLF/m/n/12 (-10) , au-to-ma-ticky se p°e-ved
+e na \T1/newtxtt/m/n/11.03998 Windows-1250\T1/Cochineal-TLF/m/n/12 (-10) ,
+ []
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen392
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[24]
+<database.png, id=312, 1128.215pt x 766.865pt>
+File: database.png Graphic file (type png)
+<use database.png>
+Package pdftex.def Info: database.png  used on input line 544.
+(pdftex.def)             Requested size: 386.95749pt x 263.02412pt.
+
+
+\FASThesis@runninghead@rule@offset=\dimen393
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[25 <./database.png>]
+
+\FASThesis@runninghead@rule@offset=\dimen394
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[26]
+
+\FASThesis@runninghead@rule@offset=\dimen395
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
 
 [27]
 
-[28
+\FASThesis@runninghead@rule@offset=\dimen396
 
-] (doc.lol)
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
 
-[29]
+
+[28]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 653.
+LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 654.
+LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 654.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 657.
+
+(C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 658.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 659.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 660.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 661.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 662.
+LaTeX Font Info:    Trying to load font information for TS1+newtxtt on input li
+ne 665.
+
+(C:\Users\honza\AppData\Local\Programs\MiKTeX\tex/fonts/newtxtt\ts1newtxtt.fd
+File: ts1newtxtt.fd 2024/03/03
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `newtxtt' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 665.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 686.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 686.
+
+
+\FASThesis@runninghead@rule@offset=\dimen397
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[29{C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtxtt/tcxAec
+.enc}]
+
+\FASThesis@runninghead@rule@offset=\dimen398
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[30]
+
+\FASThesis@runninghead@rule@offset=\dimen399
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[31]
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 793.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 793.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 793.
+
+
+\FASThesis@runninghead@rule@offset=\dimen400
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[32]
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 833.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 833.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 833.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 833.
+
+
+\FASThesis@runninghead@rule@offset=\dimen401
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[33]
+<cz_en_translation.png, id=482, 542.62724pt x 199.947pt>
+File: cz_en_translation.png Graphic file (type png)
+<use cz_en_translation.png>
+Package pdftex.def Info: cz_en_translation.png  used on input line 899.
+(pdftex.def)             Requested size: 309.56717pt x 114.06859pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen402
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[34]
+
+\FASThesis@runninghead@rule@offset=\dimen403
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[35 <./cz_en_translation.png>]
+
+\FASThesis@runninghead@rule@offset=\dimen404
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[36]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.1 on input line 978.
+
+<city_region.png, id=528, 884.30376pt x 431.6125pt>
+File: city_region.png Graphic file (type png)
+<use city_region.png>
+Package pdftex.def Info: city_region.png  used on input line 984.
+(pdftex.def)             Requested size: 309.56717pt x 151.09297pt.
+
+Overfull \hbox (0.52245pt too wide) in paragraph at lines 991--991
+|[] []| 
+ []
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen405
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[37 <./city_region.png>]
+<name_distribution_map.png, id=537, 524.55975pt x 399.29175pt>
+File: name_distribution_map.png Graphic file (type png)
+<use name_distribution_map.png>
+Package pdftex.def Info: name_distribution_map.png  used on input line 1003.
+(pdftex.def)             Requested size: 309.56717pt x 235.64711pt.
+
+Underfull \vbox (badness 2027) has occurred while \output is active []
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen406
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[38 <./name_distribution_map.png>]
+
+\FASThesis@runninghead@rule@offset=\dimen407
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[39]
+
+[40
+
+]
+Overfull \hbox (1.8pt too wide) detected at line 1033
+[] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.1 on input line 1074.
+
+[41]
+Overfull \hbox (0.46887pt too wide) in paragraph at lines 1083--1084
+\T1/Cochineal-TLF/m/n/12 (-10) Hod-no-tili jsme, zda sys-tém vrá-til p°e-klad, 
+který od-po-ví-dal o£e-ká-va-nému (bu¤ p°esn¥,
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.2 on input line 1106.
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen408
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[42]
+LaTeX Font Info:    Font shape `T1/Cochineal-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 1128.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.3 on input line 1146.
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen409
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[43]
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 1196.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 1199.
+LaTeX Info: Symbol \textminus not provided by
+            font family newtxtt in TS1 encoding.
+            Default family used instead on input line 1200.
+
+
+\FASThesis@runninghead@rule@offset=\dimen410
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[44]
+
+\FASThesis@runninghead@rule@offset=\dimen411
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[45]
+
+[46
+
+]
+Overfull \hbox (1.8pt too wide) detected at line 1221
+[] 
+ []
+
+
+
+[47]
+
+\FASThesis@runninghead@rule@offset=\dimen412
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[48]
+Overfull \hbox (1.8pt too wide) detected at line 1235
+[] 
+ []
+
+
+
+[49
+
+]
+<translation_show.png, id=625, 528.17325pt x 209.583pt>
+File: translation_show.png Graphic file (type png)
+<use translation_show.png>
+Package pdftex.def Info: translation_show.png  used on input line 1267.
+(pdftex.def)             Requested size: 386.95749pt x 153.55075pt.
+
+
+\FASThesis@runninghead@rule@offset=\dimen413
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[50 <./translation_show.png>]
+<German_Terminology.png, id=640, 522.753pt x 476.37975pt>
+File: German_Terminology.png Graphic file (type png)
+<use German_Terminology.png>
+Package pdftex.def Info: German_Terminology.png  used on input line 1280.
+(pdftex.def)             Requested size: 386.95749pt x 352.62451pt.
+
+
+\FASThesis@runninghead@rule@offset=\dimen414
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[51 <./German_Terminology.png>]
+File: name_distribution_map.png Graphic file (type png)
+<use name_distribution_map.png>
+Package pdftex.def Info: name_distribution_map.png  used on input line 1292.
+(pdftex.def)             Requested size: 386.95749pt x 294.56345pt.
+
+
+\FASThesis@runninghead@rule@offset=\dimen415
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[52]
+<database_status.png, id=655, 1011.78pt x 486.618pt>
+File: database_status.png Graphic file (type png)
+<use database_status.png>
+Package pdftex.def Info: database_status.png  used on input line 1307.
+(pdftex.def)             Requested size: 386.95749pt x 186.11221pt.
+
+
+\FASThesis@runninghead@rule@offset=\dimen416
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[53 <./database_status.png>]
+
+LaTeX Font Info:    Font shape `T1/Cochineal-TLF/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 1349.
+\FASThesis@runninghead@rule@offset=\dimen417
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[54]
+
+\FASThesis@runninghead@rule@offset=\dimen418
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[55]
+
+[56
+
+]
+bibitemlist
+LaTeX Font Info:    Font shape `OT1/mincochineal/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `OT1/mincochineal/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `OT1/mincochineal/m/n' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+LaTeX Font Info:    Font shape `OML/zcochmi/m/it' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `OML/zcochmi/m/it' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `OML/zcochmi/m/it' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1391.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.1pt on input line 1391.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1430
+[]\T1/Cochineal-TLF/m/it/12 (+10) FastAPI Do-cu-men-tation\T1/Cochineal-TLF/m/n
+/12 (+10) . FastAPI, 2020. Do-stupné z: []$\T1/newtxtt/m/n/10.95 https : //fast
+api .
+ []
+
+
+
+[57]
+Underfull \hbox (badness 1895) in paragraph at lines 1475--1479
+[]\T1/Cochineal-TLF/m/n/12 (+10) VASWANI, Ashish; et al. At-ten-tion is All You
+ Need. Ne-u-rIPS, 2017, s.
+ []
+
+
+
+\FASThesis@runninghead@rule@offset=\dimen419
+
+Overfull \vbox (14.49998pt too high) has occurred while \output is active []
+
+
+[58]
+No file doc.lof.
+
+
+[59
+
+]
+
+[60
+
+]
+No file doc.lot.
+
+
+[61]
+
+[62
+
+]
+No file doc.lol.
+
+
+[63]
+
+[64
+
+]
 
 Class memoir Warning: The material used in the headers is too large
 (28.99998pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 417.
+(in both cases you will find help in the memoir manual). on input line 1508.
 
 
 
 File: img/background-kiv.pdf Graphic file (type pdf)
 <use img/background-kiv.pdf>
-Package pdftex.def Info: img/background-kiv.pdf  used on input line 417.
+Package pdftex.def Info: img/background-kiv.pdf  used on input line 1508.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
-[30
+[65
 
 ]
 \tf@toc=\write7
 \openout7 = `doc.toc'.
+
+
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
 \tf@lof=\write8
 \openout8 = `doc.lof'.
@@ -6337,7 +6857,7 @@ Package pdftex.def Info: img/background-kiv.pdf  used on input line 417.
 \tf@lol=\write10
 \openout10 = `doc.lol'.
 
- (doc.aux)
+(doc.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -6347,13 +6867,16 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package rerunfilecheck Warning: File `doc.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `doc.out':
-(rerunfilecheck)             Before: F459A1DF2FD8C6359BB2E1E24C7CD23F;4666
-(rerunfilecheck)             After:  D7919DE8908FEBCED9FA56FA05D23DF1;5670.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  5235FC9E9507F5AFDF384C84DB295D27;16616.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                doc
@@ -6364,26 +6887,30 @@ Package logreq Info: Writing requests to 'doc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48039 strings out of 473523
- 920644 string characters out of 5714631
- 1790704 words of memory out of 5000000
- 70345 multiletter control sequences out of 15000+600000
- 904785 words of font info for 188 fonts, out of 8000000 for 9000
+ 50520 strings out of 473523
+ 965110 string characters out of 5714631
+ 1962681 words of memory out of 5000000
+ 72470 multiletter control sequences out of 15000+600000
+ 992910 words of font info for 265 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,12n,115p,1198b,2262s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/type1/public/cochineal/Co
-chineal-Bold.pfb><C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/cochineal/Cochineal-Italic.pfb><C:/Users/honza/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/cochineal/Cochineal-Roman.pfb><C:/Users/honza/AppData/Local
-/Programs/MiKTeX/fonts/type1/lcdftools/GTAmerica/GTAmerica-CondensedBold.pfb><C
-:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/type1/lcdftools/GTAmerica/GTA
-merica-CondensedRegular.pfb><C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/cochineal/cochMI.pfb><C:/Users/honza/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/honza/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/newtx/txsys.pfb>
-Output written on doc.pdf (40 pages, 1683613 bytes).
+ 113i,13n,117p,1198b,2159s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\honza\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/type1/public/cochin
+eal/Cochineal-Bold.pfb><C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/cochineal/Cochineal-Italic.pfb><C:/Users/honza/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/cochineal/Cochineal-Roman.pfb><C:/Users/honza/AppData
+/Local/Programs/MiKTeX/fonts/type1/lcdftools/GTAmerica/GTAmerica-CondensedBold.
+pfb><C:/Users/honza/AppData/Local/Programs/MiKTeX/fonts/type1/lcdftools/GTAmeri
+ca/GTAmerica-CondensedRegular.pfb><C:/Users/honza/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/cochineal/cochMI.pfb><C:/Users/honza/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/newtxtt/newtcxtt.pfb><C:/Users/honza/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/newtxtt/newtxtt.pfb><C:/Users/honza/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/Users/honza/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/honza/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
+Output written on doc.pdf (75 pages, 2270682 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 35761 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 917 PDF objects out of 1000 (max. 8388607)
+ 367 named destinations out of 1000 (max. 500000)
+ 54499 words of extra memory for PDF output out of 61914 (max. 10000000)
 
