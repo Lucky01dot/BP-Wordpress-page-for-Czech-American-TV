@@ -1,36 +1,35 @@
-# 🌍 WordPress Plugin: Interaktivní mapy a vícejazyčné překladače s Word2Vec
+# 🌍 WordPress Plugin: Interactive Maps & Multilingual Translators with Word2Vec
 
-Tento WordPress plugin kombinuje **interaktivní mapy vytvořené pomocí Leaflet.js**, **vícejazyčné překladače** a **serverové zpracování významově podobných slov pomocí Word2Vec**.
+This WordPress plugin combines **interactive maps built with Leaflet.js**, **multilingual translators**, and a **Python REST API** backend using Word2Vec to suggest semantically similar words.
 
 
-## ✨ Funkce pluginu
 
-### 🗺️ Interaktivní mapy
-- **2 mapy** vytvořené pomocí **Leaflet.js**
-- Zobrazení historických nebo tematických lokalit
-- Možnost přidávání vlastních vrstev, popisků nebo událostí po kliknutí
+## ✨ Plugin Features
 
-### 🈯 Překladače
-- **3 překladače** (s databázovou a online podporou):
-  - 🇨🇿 Čeština → Angličtina
-  - 🇩🇪 Němčina → Angličtina
-  - 🇱🇦 Latina → Angličtina
-- Kombinace **lokální databáze** a **MyMemory API** (pro rozšíření výsledků)
-- Automatické vyhledání překladu nebo návrat alternativních možností
+### 🗺️ Interactive Maps
+- **2 interactive maps** powered by **Leaflet.js**
+- Display of historical or thematic city locations
+- Custom markers, tooltips, and click actions supported
 
-### 🧠 Word2Vec doporučení
-- Napojení na vlastní **REST API v Pythonu**
-- Po překladu se zobrazí **významově podobná slova** díky Word2Vec (model: Google News)
-- Backend server vystavuje JSON API pro komunikaci s WordPress frontendem
+### 🈯 Translators
+- **3 language translators**:
+  - 🇨🇿 Czech → English
+  - 🇩🇪 German → English
+  - 🇱🇦 Latin → English
+- Combines **local database lookup** with **MyMemory API** for broader results
+- Displays direct translations and suggested alternatives
+
+### 🧠 Word2Vec Recommendations
+- Connected to a custom **Python REST API**
+- Displays **semantically related words** using the Word2Vec model (Google News)
+- Frontend queries the backend and displays results alongside translations
 
 ---
 
-## 🧱 Technologie
+## 🧱 Technologies Used
 
 - **Frontend:** JavaScript, Leaflet.js, AJAX, WordPress Shortcodes
-- **Backend (WP plugin):** PHP, MySQL
-- **Překladová logika:** kombinace SQL dotazů a MyMemory API
-- **Word2Vec API Server:** Python (FastAPI/Flask), REST API, předtrénovaný model Google News
-
----
+- **Backend (WordPress Plugin):** PHP, MySQL
+- **Translation logic:** SQL + MyMemory API
+- **REST API Server:** Python (FastAPI or Flask), Google News Word2Vec model
 
